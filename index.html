@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>title</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <link rel="stylesheet" href="./new/css/aos.css" />
+        <link rel="stylesheet" href="./new/css/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/gsap@3.12.2/dist/ScrollToPlugin.min.js"></script>
+
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        ></script>
+        <script type="text/javascript" src="./new/js/util.lib.js"></script>
+        <script type="text/javascript" src="./new/js/common.js"></script>
+        <script type="text/javascript" src="./new/js/main.js"></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./new/css/slick.css"
+        />
+        <link rel="stylesheet" type="text/css" href="./new/css/p_style.css" />
+
+        <script>
+            const __baseRoot = '/new'
+            const __basePath = '/new'
+        </script>
+    </head>
+    <body class="intro-animation">
+        <div id="wrap">
+            <header class="header">
+                <div class="header-wrap main">
+                    <div class="logo">
+                        <a href="/new/main/" class="logo_img">
+                            <svg
+                                width="85"
+                                height="27"
+                                class="_32ANSIZormifc9Vc6VVwrx"
+                                viewBox="0 0 587.93 165"
+                            >
+                            <title>mainLogoRiotFist21</title>
+                            <path
+                                d="M98.77.33L0 46.07l24.61 93.66 18.73-2.3-5.15-58.89 6.15-2.74L54.96 136l32.01-3.93-5.69-65 6.09-2.71 11.68 66.23 32.38-3.98-6.23-71.25 6.16-2.74 12.77 72.43 32.01-3.93V19.71L98.77.33zm2.32 142.05l1.63 9.22 73.42 12.24v-30.68l-75.01 9.22h-.04zm144.49-19.22v12.63h15.57a14.84 14.84 0 01-1.92 7.31 13 13 0 01-5.6 5.11 20 20 0 01-8.9 1.8 17.53 17.53 0 01-10-2.8 17.87 17.87 0 01-6.44-8.14 33.06 33.06 0 01-2.27-12.93 31.81 31.81 0 012.32-12.81 18.14 18.14 0 016.5-8 17.27 17.27 0 019.82-2.78 19.31 19.31 0 015.36.71 14.15 14.15 0 014.33 2.09 12.92 12.92 0 013.18 3.29 15.61 15.61 0 012 4.44h17.27a27.22 27.22 0 00-3.46-10.28 28.84 28.84 0 00-7.05-8.1 32.6 32.6 0 00-9.91-5.29 37.91 37.91 0 00-12.06-1.86 37.32 37.32 0 00-14 2.6 32.6 32.6 0 00-11.36 7.61 35 35 0 00-7.61 12.21 46.15 46.15 0 00-2.73 16.44q0 11.94 4.54 20.59a32.4 32.4 0 0012.69 13.27 39.84 39.84 0 0035.84.84 28.39 28.39 0 0011.67-11q4.25-7.19 4.24-17.2v-9.76zm215.03 40.81V88.53h51.67v13.96h-34.62v16.76h27.99v13.96h-27.99v16.8h34.7v13.96h-51.75zm101.83-53.3a9 9 0 00-3.54-6.64c-2.09-1.59-5-2.38-8.69-2.38a16.63 16.63 0 00-6.26 1 8.62 8.62 0 00-3.83 2.78 6.74 6.74 0 00-1.33 4 6.2 6.2 0 00.79 3.29 7.27 7.27 0 002.4 2.45 16.54 16.54 0 003.7 1.79 40.14 40.14 0 004.64 1.31l6.63 1.54a47.19 47.19 0 019.45 3.08 27.46 27.46 0 017.2 4.68 18.84 18.84 0 014.58 6.39 20.37 20.37 0 011.61 8.29 20.65 20.65 0 01-3.54 12.11 22.56 22.56 0 01-10.15 7.85 41.31 41.31 0 01-15.93 2.76 42.69 42.69 0 01-16.17-2.81 23.22 23.22 0 01-10.72-8.48q-3.83-5.66-4-14.12h16.43a10.68 10.68 0 007.05 9.94 19.37 19.37 0 007.24 1.26 18.44 18.44 0 006.66-1.09 10 10 0 004.33-3 7.22 7.22 0 001.57-4.48 6.16 6.16 0 00-1.42-4 10.86 10.86 0 00-4.14-2.81 42.07 42.07 0 00-6.89-2.14l-8.07-1.95q-9.65-2.3-15.23-7.26t-5.54-13.44a19.86 19.86 0 013.72-12.12 24.74 24.74 0 0110.33-8.11 36.74 36.74 0 0115-2.91 35.62 35.62 0 0114.92 2.91 23.43 23.43 0 019.91 8.14 21.54 21.54 0 013.6 12.12zm-113.99 53.3h-16.87v-57.35l-1.73-.02-17.04 57.37h-16.86l-16.58-57.37-2.15.02v57.35h-16.87V88.53h28.67l14.48 50.56h1.75l14.48-50.56h28.72v75.44zm-114.66 0h18.27l-25.33-75.43h-23.15l-25.37 75.43h18.3l4.93-16.54h27.42zm-28.43-29.7l8.22-27.65h3.1l8.26 27.65zm278.58-37.76a4 4 0 01-3.67-2.44 4 4 0 010-3.1 4 4 0 01.85-1.27 4.25 4.25 0 011.27-.86 4.15 4.15 0 013.1 0 4.13 4.13 0 011.27.86 4.08 4.08 0 01.86 1.27 4 4 0 010 3.1 4.08 4.08 0 01-.86 1.27 4 4 0 01-1.27.86 4 4 0 01-1.55.31zm0-1.09a2.84 2.84 0 001.47-.39 2.94 2.94 0 001.05-1 2.93 2.93 0 000-2.92 3 3 0 00-1.06-1 2.93 2.93 0 00-2.92 0 3 3 0 00-1 1 2.86 2.86 0 000 2.92 3 3 0 001 1 2.83 2.83 0 001.46.39zm-1.46-1.15V90.6h1.78a1.52 1.52 0 01.69.15 1.13 1.13 0 01.47.42 1.24 1.24 0 01.17.66 1.16 1.16 0 01-.18.66 1 1 0 01-.48.41 1.56 1.56 0 01-.7.14h-1.2v-.72h1a.52.52 0 00.36-.12.5.5 0 00.14-.37.47.47 0 00-.14-.37.52.52 0 00-.36-.12h-.55v2.93zm2.39-1.68l.82 1.68h-1.11l-.75-1.68zM282.41 1.03h17.05v75.44h-17.05zm98.02 37.72q0 12.42-4.71 21a32.67 32.67 0 01-12.79 13.17 38.57 38.57 0 01-36.31 0 32.75 32.75 0 01-12.79-13.2q-4.71-8.66-4.71-21t4.71-21.05a32.67 32.67 0 0112.75-13.14 38.65 38.65 0 0136.31 0 32.67 32.67 0 0112.79 13.17q4.71 8.64 4.71 21.05m-17.35 0a33.35 33.35 0 00-2.23-13 17.47 17.47 0 00-6.33-8 18.57 18.57 0 00-19.45 0 17.57 17.57 0 00-6.35 8 38.59 38.59 0 000 26 17.49 17.49 0 006.35 8 18.57 18.57 0 0019.45 0 17.39 17.39 0 006.33-8 33.4 33.4 0 002.23-13M246.58 50.17l8.76 26.3h18.71l-9.74-28.33h-13.23l-.79-2.44c2.52-.49 6.83-1.25 10.65-3.85a20 20 0 008.75-16.39 24.15 24.15 0 00-3.26-12.75 21.9 21.9 0 00-9.36-8.64 32.56 32.56 0 00-14.64-3H212v75.4h17.06v-26.3zm-.32-15.61a19.35 19.35 0 01-7.26 1.18h-9.94V14.88h9.91a18.68 18.68 0 017.25 1.24 9.12 9.12 0 014.4 3.7 10 10 0 011.5 5.64 9.65 9.65 0 01-1.48 5.55 8.86 8.86 0 01-4.38 3.55M382.04 1.03v14h29.3l.8 2.45c-2.48.48-6.67 1.22-10.43 3.7v55.31h16.87v-61.5h19.62v-14z"
+                            ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header container">
+                        <ul id="gnb">
+                            <li class="main_menu">
+                                <a href="/new/sub/01/01.html" class="titDot">
+                                    라이엇 소개
+                                </a>
+                                <ul class="depth02">
+                                    <li>
+                                        <a href="/new/sub/01/01.html">
+                                            라이엇 소개
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/new/sub/01/02.html">
+                                            다양성과 포용
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/new/sub/01/03.html">
+                                            사회공헌
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main_menu">
+                                <a href="/new/sub/02/01.html" class="titDot">
+                                    라이엇에서 일하기
+                                </a>
+                                <ul class="depth02">
+                                    <li>
+                                        <a href="/new/sub/02/01.html">
+                                            채용공고
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/new/sub/02/02.html">
+                                            지역 오피스
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/new/sub/02/03.html">
+                                            라이엇에서의 생활
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main_menu">
+                                <a href="/new/sub/03/01.html" class="titDot">
+                                    소식
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub_menuBtn all-menu">
+                        <img src="http://www.smart-pain.com/new/images/common/all_menu.png" class="img_w" />
+                    </div>
+                </div>
+            </header>
+            <aside id="sitemap">
+                <div class="sitemap-menu">
+                    <div class="site-menu01">
+                        <ul>
+                            <li class="depth01">
+                                <a href="/new/sub/01/01.html" class="tit">
+                                    게임
+                                </a>
+                                <div class="depth02">
+                                    <ul>
+                                        <li>
+                                            <a href="/new/sub/01/01.html">
+                                                리그 오브 레전드
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/01/02.html">
+                                                발로란트
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/01/03.html">
+                                                전략적 팀 전투
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/01/04.html">
+                                                레전드 오브 룬테라
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/01/05.html">
+                                                리그 오브 레전드: 와일드 리프트
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth01">
+                                <a href="/new/sub/02/01.html" class="tit">
+                                    RIOT FORGE
+                                </a>
+                                <div class="depth02">
+                                    <ul>
+                                        <li>
+                                            <a href="/new/sub/02/01.html">
+                                                시간/교차
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/02/02.html">
+                                                마법공학 아수라장
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/02/03.html">
+                                                마력 척결관
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/02/04.html">
+                                                몰락한 왕
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/02/05.html">
+                                                누누의 노래
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/02/06.html">
+                                                RIOT FORGE의 게임
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth01">
+                                <a href="/new/sub/03/01.html" class="tit">
+                                    E스포츠
+                                </a>
+                                <div class="depth02">
+                                    <ul>
+                                        <li>
+                                            <a href="/new/sub/03/01.html">
+                                                리그 오브 레전드 e스포츠
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/03/02.html">
+                                                발로란트 e스포츠
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth01">
+                                <a href="/new/sub/04/01.html" class="tit">
+                                    엔터테인먼트
+                                </a>
+                                <div class="depth02">
+                                    <ul>
+                                        <li>
+                                            <a href="/new/sub/04/01.html">
+                                                아케인
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/04/02.html">
+                                                유니버스
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/04/03.html">
+                                                라이엇 게임즈 뮤직
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth01">
+                                <a href="/new/sub/05/01.html" class="tit">
+                                    기타
+                                </a>
+                                <div class="depth02">
+                                    <ul>
+                                        <li>
+                                            <a href="/new/sub/05/01.html">
+                                                라이엇 게임즈
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/05/02.html">
+                                                라이엇 스토어
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/05/03.html">
+                                                라이엇 모바일
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/new/sub/05/04.html">
+                                                라이엇 고객지원
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sitemap-close">
+                    <a href="javascript:;"
+                        ><img src="./new/images/all_menu_close_c.png"
+                    /></a>
+                </div>
+            </aside>
+            <a href="" class="topBtn"><img src="http://www.smart-pain.com/new/images/main/top_btn.png" /></a>
+            <div class="quickWrap">
+                <p class="quickBtn">
+                    <svg
+                      width="50"
+                      height="40"
+                      dataname="Layer 1"
+                      viewBox="0 0 185.47 163.51"
+                      fill="#f9f9f9"
+                    >
+                        <path
+                            class="cls-1"
+                            d="M98.77 0L0 45.74l24.61 93.66 18.73-2.3-5.15-58.89 6.15-2.74 10.62 60.2 32.01-3.93-5.69-65 6.09-2.71 11.68 66.23 32.38-3.98-6.23-71.25 6.16-2.74 12.77 72.43 32.01-3.93V19.38L98.77 0zm2.32 142.05l1.63 9.22 73.42 12.24v-30.68l-75.01 9.21-.04.01zM176.17.71V0h3.64v.71zm1.41 3.94V.4h.81v4.25zm3 0V0h.8v4.65zm2.21 0L180.73 0h.83L183 3.41 184.44 0h.84l-2.06 4.65zm1.83 0V0h.81v4.65z"
+                        ></path>
+                    </svg>
+                    <img src="./new/images/quick_txt_c.png" class="text" />
+                </p>
+                <div class="quickCont">
+                    <div class="quickClose">
+                        <img src="http://www.smart-pain.com/new/images/main/quick_close.png" alt="close" />
+                    </div>
+                    <p class="tit">스마트마취통증의학과를<br />찾아주셔서 감사합니다. &#128591;</p>
+                    <div class="itemList">
+                        <div class="item">
+                            <div class="flex">
+                                <p>평촌점</p>
+                                <div>
+                                    <a href="https://blog.naver.com/smart_pain" target="_blank"
+                                        ><img
+                                            src="http://www.smart-pain.com/new/images/main/quick_sns01.png"
+                                            alt="instagram"
+                                    /></a>
+                                    <a href="https://www.youtube.com/channel/UCCJnDon2N96lhAugAljZS_w" target="_blank"
+                                        ><img
+                                            src="http://www.smart-pain.com/new/images/main/quick_sns02.png"
+                                            alt="youtube"
+                                    /></a>
+                                </div>
+                            </div>
+                            <h5>031.425.7755</h5>
+                            <a
+                                href="https://m.booking.naver.com/booking/13/bizes/856941?theme=place&area=pll"
+                                target="_blank"
+                                class="resebtn"
+                            >
+                                <img
+                                    src="http://www.smart-pain.com/new/images/main/quick_naver.png"
+                                    alt="naver"
+                                />네이버 예약
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="flex">
+                                <p>안양점</p>
+                                <div>
+                                    <a href="https://blog.naver.com/smartpainclinic" target="_blank"
+                                        ><img
+                                            src="http://www.smart-pain.com/new/images/main/quick_sns01.png"
+                                            alt="instagram"
+                                    /></a>
+                                </div>
+                            </div>
+                            <h5>031.466.7555</h5>
+                            <a
+                                href="https://m.booking.naver.com/booking/13/bizes/888179?theme=place&area=pll"
+                                target="_blank"
+                                class="resebtn"
+                            >
+                                <img
+                                    src="http://www.smart-pain.com/new/images/main/quick_naver.png"
+                                    alt="naver"
+                                />네이버 예약
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="main_home Msection1">
+                <div class="borderPadding">
+                    <div class="main_bg_slider main_slider">
+                        <div class="item v1">
+                            <a href="https://2xko.riotgames.com/ko-kr/" class="v_img">
+                                <div
+                                    class="img"
+                                    style="
+                                        background: url('./new/images/main-slide_img1.png')
+                                            no-repeat center/cover;
+                                    "
+                                ></div>
+                            </a>
+                        </div>
+                        <div class="item v2">
+                            <a href="https://www.youtube.com/watch?v=z3AOg7mUP_Y" class="v_img">
+                                <div
+                                class="img v2_Thumbnail"
+                                style="
+                                    background: url('./new/images/main-slide_img2.jpg')
+                                        no-repeat center/cover;
+                                "
+                                ></div>
+                            </a>
+                        </div>
+                        <div class="item v3">
+                            <a href="https://www.youtube.com/watch?v=Zf543I6_Ahw" class="v_img">
+                                <div
+                                    class="img v2_Thumbnail"
+                                    style="
+                                        background: url('./new/images/main-slide_img3.jpg')
+                                            no-repeat center/cover;
+                                    "
+                                ></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text_slider_wrap">
+                        <div class="inner">
+                            <div class="main_text_slider main_slider">
+                                <div class="item v1">
+                                    <div class="text_wrap">
+                                        <div class="title1">
+                                            <p>
+                                                프로젝트 L의 공식 명칭은
+                                            </p>
+                                            <p>
+                                                <img src="./new/images/main-slide_img-txt1.png" alt="배너 이미지 글자 2XKO" class="title1-img">
+                                                입니다
+                                            </p>
+                                        </div>
+                                        <div class="txt1">
+                                            <p>
+                                                이전에 프로젝트 L로 알려진 2XKO는 라이엇 게임즈의 차기 2대2 태그 기반 격투 게임입니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item v2">
+                                    <div class="text_wrap">
+                                        <div class="title1 title2">
+                                            <p>
+                                                2024 VCT 팀 캡슐 소개 // <br /> 스킨 공개 트레일러 - 발로란트
+                                            </p>
+                                        </div>
+                                        <div class="txt1">
+                                            <p>
+                                                2024 VCT 팀들과의 협업을 통해 제작된 새로운 VCT 팀 캡슐로 좋아하는 발로란트 e스포츠 팀을 응원해 보세요.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item v3">
+                                    <div class="text_wrap">
+                                        <div class="title1 title2">
+                                            <p>
+                                                룬테라와 <br /> 그 너머에서 맞이하는 용의 해
+                                            </p>
+                                        </div>
+                                        <div class="txt1">
+                                            <p>
+                                                천상비늘, 행운의 비늘, 용등, 전략적 팀 전투 세트 부활을 만나볼 수 있는 2024 설맞이 축제에 오신 것을 환영합니다. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="indicator">
+                                <div class="dot"></div>
+                                <button type="button" class="status_wrap"><span class="status stop"></span></button>
+                                <button type="button" class="btn prev"></button>
+                                <button type="button" class="btn next"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orange_bg"></div>
+            </section>
+            <section class="Msectionnew2">
+                <div class="transition_section">
+                    <div class="flex-box">
+                        <div class="flex-box--wrap">
+                            <p class="panelsText fixedText">
+                                WELCOME TO!<br />
+                                smart pain clinic
+                            </p>
+                            <div class="panel cursor_wrap heightImg"></div>
+                            <div class="panel cursor_wrap hover--eff heightImg">
+                                <a href="/new/sub/06/02.html"
+                                    data-aos="fade-up"
+                                    data-aos-duration="400">
+                                    <video
+                                        src="./new/video/Still-Here_Season_2024_Cinematic_League-o-fLegends.mp4"
+                                        title="Still Here | 2024 시즌 시네마틱 - 리그 오브 레전드"
+                                        width="100%"
+                                        height="100%"
+                                        autoplay
+                                        controls
+                                        loop
+                                        class="hover_video hover-effect"
+                                        >
+                                    </video>
+                                    <img
+                                        src="./new/images/main-slide2-img1.png"
+                                        alt="리그 오브 레전드"
+                                        class="def_img"
+                                    />
+                                </a>
+                            </div>
+                            <div class="panel cursor_wrap hover--eff heightImg">
+                                <a href="/new/sub/06/03.html" data-aos="fade-up" data-aos-duration="400">
+                                    <img
+                                        src="http://www.smart-pain.com/new/images/main/Msection2_img02.png"
+                                        alt="김태준대표원장"
+                                        class="def_img"
+                                    />
+                                    <img
+                                        src="http://www.smart-pain.com/new/images/main/Msection2_img02_hover_n.png"
+                                        alt="김태준대표원장"
+                                        class="hover_img"
+                                    />
+                                </a>
+                            </div>
+                            <div class="panel heightImg">
+                                <div class="loc_wrap" data-aos="fade-up" data-aos-delay="600" data-aos-duration="400">
+                                    <div class="cursor_wrap hover--eff">
+                                        <a href="/new/sub/06/02.html">
+                                            <img
+                                                src="http://www.smart-pain.com/new/images/main/Msection2_img03.png"
+                                                alt="평촌점"
+                                                class="def_img"
+                                            />
+                                            <img
+                                                src="http://www.smart-pain.com/new/images/main/Msection2_img03_hover_n.png"
+                                                alt="평촌점"
+                                                class="hover_img"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="cursor_wrap hover--eff">
+                                        <a href="/new/sub/06/03.html">
+                                            <img
+                                                src="http://www.smart-pain.com/new/images/main/Msection2_img04.png"
+                                                alt="안양점"
+                                                class="def_img"
+                                            />
+                                            <img
+                                                src="http://www.smart-pain.com/new/images/main/Msection2_img04_hover_n.png"
+                                                alt="안양점"
+                                                class="hover_img"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel last heightImg smartnetwork">
+                                <div>
+                                    <h1>smart<br />network</h1>
+                                    <p>
+                                        스마트마취통증의학과는 안양시 지역의 대표적인<br />
+                                        비수술 통증치료 네트워크 병원입니다.
+                                    </p>
+                                    <a href="/new/sub/06/01.html">
+                                        <img
+                                            src="http://www.smart-pain.com/new/images/main/Msection2_img04_btntxt.png"
+                                            alt=""
+                                        />
+                                        <!-- <div class="button__bg"></div><span>스마트 네트워크 소개</span> -->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel"></div>
+                            <div class="panel"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Msection3">
+                <div class="flex_box">
+                    <div class="text_wrap">
+                        <div class="line_wrap msection3--line1" data-aos="fade-up" data-aos-duration="6000">
+                            <span class="text">스마트의</span
+                            ><span class="item_img"
+                                ><img src="http://www.smart-pain.com/new/images/main/Msection3_img01.png" /></span
+                            ><span class="text">5가지 차별화 진료</span>
+                        </div>
+                        <div
+                            class="line_wrap msection3--line2"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                            data-aos-duration="6000"
+                        >
+                            <span class="text">다름에는 이유가</span
+                            ><span class="item_img"
+                                ><img src="http://www.smart-pain.com/new/images/main/Msection3_img02.png" /></span
+                            ><span class="text">있습니다.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Msection4">
+                <div class="black_bg"></div>
+                <div class="container" style="max-width: 1700px">
+                    <div class="list_wrap list1" data-aos="fade-up">
+                        <div class="img_wrap">
+                            <div class="ani_orange left"></div>
+                            <img src="http://www.smart-pain.com/new/images/main/Msection4_newImg01.jpg" />
+                        </div>
+                        <div class="txt_link">
+                            <div class="txt_wrap" data-aos="fade-up">
+                                <p class="eng">First</p>
+                                <h1>
+                                    꼼꼼한 검사로 개인에 맞는<br />
+                                    <b>체계적인 치료를 설계</b>합니다<span class="orange_color">.</span>
+                                </h1>
+                            </div>
+                            <div class="link_wrap" data-aos="fade-up" data-aos-delay="300">
+                                <a href="/new/sub/01/01.html" class="button--bestia--main">
+                                    <div class="button__bg"></div>
+                                    <span>꼼꼼한 검사 시스템</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_wrap list2" data-aos="fade-up">
+                        <div class="txt_link left">
+                            <div class="txt_wrap" data-aos="fade-up">
+                                <p class="eng">Second</p>
+                                <h1 style="letter-spacing: -0.08em">
+                                    치료는 <b>결과 뿐 아니라 과정도 중요하기에,</b><br />
+                                    한 분 한 분 가족이라는 생각으로<br />
+                                    정성을 다해 진료 합니다<span class="orange_color">.</span>
+                                </h1>
+                            </div>
+                            <div class="link_wrap" data-aos="fade-up" data-aos-delay="300">
+                                <a href="/new/sub/06/01.html#smart" class="button--bestia--main">
+                                    <div class="button__bg"></div>
+                                    <span>환자중심의 치료 원칙</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="img_wrap">
+                            <div class="ani_orange right"></div>
+                            <img src="http://www.smart-pain.com/new/images/main/Msection4_newImg02.jpg" />
+                        </div>
+                    </div>
+                    <div class="list_wrap list3" data-aos="fade-up">
+                        <div class="img_wrap">
+                            <div class="ani_orange left"></div>
+                            <img src="http://www.smart-pain.com/new/images/main/Msection4_newImg03.jpg" />
+                        </div>
+                        <div class="txt_link">
+                            <div class="txt_wrap" data-aos="fade-up">
+                                <p class="eng">Third</p>
+                                <h1>
+                                    통증은 물론 재발까지 고려한치료!<br />
+                                    체계적 검사에 과학적 치료를 더하여,<br />
+                                    <b>우리 몸의 기초부터 차근차근 치료합니다</b><span class="orange_color">.</span>
+                                </h1>
+                            </div>
+                            <div class="link_wrap" data-aos="fade-up" data-aos-delay="300">
+                                <a href="/new/sub/01/02.html" class="button--bestia--main">
+                                    <div class="button__bg"></div>
+                                    <span>스마트 과학치료</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_wrap list4" data-aos="fade-up">
+                        <div class="txt_link left" style="padding-left: 170px">
+                            <div class="txt_wrap" data-aos="fade-up">
+                                <p class="eng">Fourth</p>
+                                <h1>
+                                    치료 이후 회복이 잘 될 수 있도록<br />
+                                    <b>충분한 영양 보충을 통해</b><br />
+                                    섬세하게 케어 합니다<span class="orange_color">.</span>
+                                </h1>
+                            </div>
+                            <div class="link_wrap" data-aos="fade-up" data-aos-delay="300">
+                                <a href="/new/sub/01/03.html" class="button--bestia--main">
+                                    <div class="button__bg"></div>
+                                    <span>영양 플러스 치료</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="img_wrap">
+                            <div class="ani_orange right"></div>
+                            <img src="http://www.smart-pain.com/new/images/main/Msection4_newImg04.jpg" />
+                        </div>
+                    </div>
+                    <div class="list_wrap list5" data-aos="fade-up">
+                        <div class="img_wrap">
+                            <div class="ani_orange left"></div>
+                            <img src="http://www.smart-pain.com/new/images/main/Msection4_newImg05.jpg" />
+                        </div>
+                        <div class="txt_link">
+                            <div class="txt_wrap" data-aos="fade-up">
+                                <p class="eng">Fifth</p>
+                                <h1 class="ani__txt__fff" data-color="black white">
+                                    비수술적 치료를 우선 적용하여<br />
+                                    <b>치료의 과정에도 무리가 가지 않도록</b><br />
+                                    최선의 노력을 기울입니다<span class="orange_color">.</span>
+                                </h1>
+                            </div>
+                            <div class="link_wrap topbot_link" data-aos="fade-up" data-aos-delay="100">
+                                <a href="/new/sub/04/01.html" class="button--bestia--main ani__txt__fff">
+                                    <div class="button__bg"></div>
+                                    <span>신경치료술</span>
+                                </a>
+                                <a href="/new/sub/04/02.html" class="button--bestia--main ani__txt__fff">
+                                    <div class="button__bg"></div>
+                                    <span>신경성형술</span>
+                                </a>
+                                <a href="/new/sub/04/03.html" class="button--bestia--main ani__txt__fff">
+                                    <div class="button__bg"></div>
+                                    <span>주사치료</span>
+                                </a>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <a href="/new/sub/04/04.html" class="button--bestia--main ani__txt__fff">
+                                    <div class="button__bg"></div>
+                                    <span>체외충격파</span>
+                                </a>
+                                <a href="/new/sub/04/05.html" class="button--bestia--main ani__txt__fff">
+                                    <div class="button__bg"></div>
+                                    <span>신장분사치료</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Msection5">
+                <div class="black_bg"></div>
+                <div class="title_list">
+                    <span class="list_item_top">
+                        <span class="label">special</span>
+                        <span class="space"></span>
+                    </span>
+                    <span class="list_item_bottom">
+                        <span class="label">clinic</span>
+                        <span class="space"></span>
+                    </span>
+                </div>
+            </section>
+            <section class="MsectionNew6">
+                <div class="list_container cursor_wrap" data-aos="fade-up">
+                    <a href="/new/sub/02/03.html">
+                        <div class="fixed_txt">
+                            <h1>목·허리 디스크 특화 클리닉</h1>
+                        </div>
+                        <iframe
+                            src="https://player.vimeo.com/video/879280967?h=a8993ab929&autoplay=1&controls=0&loop=1&autopause=0&muted=1"
+                            allow="autoplay"
+                            frameborder="0"
+                            webkitallowfullscreen
+                            mozallowfullscreen
+                            allowfullscreen
+                        ></iframe>
+                    </a>
+                </div>
+                <div class="list_container cursor_wrap" data-aos="fade-up">
+                    <a href="/new/sub/05/01.html">
+                        <div class="fixed_txt">
+                            <h1>부위별 통증 클리닉</h1>
+                        </div>
+                        <iframe
+                            src="https://player.vimeo.com/video/889781229?h=12372c3015&autoplay=1&controls=0&loop=1&autopause=0&muted=1"
+                            allow="autoplay"
+                            frameborder="0"
+                            webkitallowfullscreen
+                            mozallowfullscreen
+                            allowfullscreen
+                        ></iframe>
+                    </a>
+                </div>
+                <div class="list_container cursor_wrap" data-aos="fade-up">
+                    <a href="/new/sub/01/05.html">
+                        <div class="fixed_txt">
+                            <h1>케이스별 집중 클리닉</h1>
+                        </div>
+                        <iframe
+                            src="https://player.vimeo.com/video/878512943?h=fa272b7a19&autoplay=1&controls=0&loop=1&autopause=0&muted=1"
+                            allow="autoplay"
+                            frameborder="0"
+                            webkitallowfullscreen
+                            mozallowfullscreen
+                            allowfullscreen
+                        ></iframe>
+                    </a>
+                </div>
+            </section>
+            <section class="MsectionNew7text">
+                <p>
+                    <img
+                        src="http://www.smart-pain.com/new/images/main/Msection72_text01.png"
+                        alt="special program for quick recovery"
+                    /><img
+                        src="http://www.smart-pain.com/new/images/main/Msection72_text01.png"
+                        alt="special program for quick recovery"
+                    />
+                </p>
+                <p>
+                    <img
+                        src="http://www.smart-pain.com/new/images/main/Msection72_text02.png"
+                        alt="special program for quick recovery"
+                    /><img
+                        src="http://www.smart-pain.com/new/images/main/Msection72_text02.png"
+                        alt="special program for quick recovery"
+                    />
+                </p>
+            </section>
+            <section class="MsectionNew7">
+                <div class="sub_top" data-aos="fade-up">
+                    <h1>빠른회복을 위한 스마트한 치료<span class="orange_color">.</span></h1>
+                </div>
+                <div class="flex">
+                    <div class="MsectionNew7Lt">
+                        <div class="index-flow__side">
+                            <div class="index-flow__image">
+                                <img
+                                    src="http://www.smart-pain.com/new/images/main/Msection72_Img01.jpg"
+                                    alt=""
+                                    class="image01"
+                                />
+                                <img
+                                    src="http://www.smart-pain.com/new/images/main/Msection72_Img02.jpg"
+                                    alt=""
+                                    class="image02"
+                                />
+                                <img
+                                    src="http://www.smart-pain.com/new/images/main/Msection72_Img03.jpg"
+                                    alt=""
+                                    class="image03"
+                                />
+                                <img
+                                    src="http://www.smart-pain.com/new/images/main/Msection72_Img04.jpg"
+                                    alt=""
+                                    class="image04"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MsectionNew7Rt">
+                        <div class="index-flow__body">
+                            <div class="index-flow__item item01" data-change-trigger>
+                                <h3 class="titleWrap">
+                                    <div class="number">
+                                        <img src="http://www.smart-pain.com/new/images/main/Msection72_num01.png" />
+                                    </div>
+                                    <div>
+                                        <div class="title">
+                                            <p>도수재활치료</p>
+                                            <a href="/new/sub/05/01.html">
+                                                <div class="circleBtn">
+                                                    <div class="icon">
+                                                        <svg
+                                                            viewBox="0 0 180 180"
+                                                            version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <circle
+                                                                cx="90"
+                                                                cy="90"
+                                                                r="80"
+                                                                stroke="rgba(255 255 255 / 50%)"
+                                                                fill="none"
+                                                                class="outline"
+                                                            ></circle>
+                                                        </svg>
+                                                        <svg
+                                                            viewBox="0 0 180 180"
+                                                            version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <circle
+                                                                cx="90"
+                                                                cy="90"
+                                                                r="80"
+                                                                stroke="rgba(214 118 8 / 0%)"
+                                                                fill="none"
+                                                                class="outline outline2"
+                                                            ></circle>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <p>단순 통증치료를 넘어 질환의 근본적인 원인을 찾아 치료합니다.</p>
+                                    </div>
+                                </h3>
+                                <div class="infoWrap">
+                                    <h4 class="subtitle">스마트의 도수재활치료 POINT</h4>
+                                    <dl class="">
+                                        <div class="item">
+                                            <dt>POINT 01</dt>
+                                            <dd>개인별 1:1 맞춤 도수재활치료를 진행합니다.</dd>
+                                        </div>
+                                        <div class="item">
+                                            <dt>POINT 02</dt>
+                                            <dd>전문의의 정확한 검사를 통한 빠른 진단이 가능합니다.</dd>
+                                        </div>
+                                        <div class="item">
+                                            <dt>POINT 03</dt>
+                                            <dd>올바른 자세와 생활습관을 유지할 수 있도록 교육합니다.</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="index-flow__item item02" data-change-trigger>
+                                <h3 class="titleWrap">
+                                    <div class="number">
+                                        <img src="http://www.smart-pain.com/new/images/main/Msection72_num02.png" />
+                                    </div>
+                                    <div>
+                                        <div class="title">
+                                            <p>슬링운동치료</p>
+                                            <a href="/new/sub/05/02.html">
+                                                <div class="circleBtn">
+                                                    <div class="icon">
+                                                        <svg
+                                                            viewBox="0 0 180 180"
+                                                            version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <circle
+                                                                cx="90"
+                                                                cy="90"
+                                                                r="80"
+                                                                stroke="rgba(255 255 255 / 50%)"
+                                                                fill="none"
+                                                                class="outline"
+                                                            ></circle>
+                                                        </svg>
+                                                        <svg
+                                                            viewBox="0 0 180 180"
+                                                            version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <circle
+                                                                cx="90"
+                                                                cy="90"
+                                                                r="80"
+                                                                stroke="rgba(214 118 8 / 0%)"
+                                                                fill="none"
+                                                                class="outline outline2"
+                                                            ></circle>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <p>신체의 불안정한 균형을 바로잡아 건강하고 바른 체형을 만듭니다.</p>
+                                    </div>
+                                </h3>
+                                <div class="infoWrap">
+                                    <h4 class="subtitle">스마트의 슬링운동치료 POINT</h4>
+                                    <dl class="">
+                                        <div class="item">
+                                            <dt>POINT 01</dt>
+                                            <dd>환자 개개인에 맞는 맞춤 프로그램을 진행합니다.</dd>
+                                        </div>
+                                        <div class="item">
+                                            <dt>POINT 02</dt>
+                                            <dd>임상 경험이 풍부한 숙련된 치료사가 함께합니다.</dd>
+                                        </div>
+                                        <div class="item">
+                                            <dt>POINT 03</dt>
+                                            <dd>환자에 상태에 따른 치료강도와 테크닉을 적용합니다.</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="index-flow__item item03" data-change-trigger>
+                                <h3 class="titleWrap">
+                                    <div class="number">
+                                        <img src="http://www.smart-pain.com/new/images/main/Msection72_num03.png" />
+                                    </div>
+                                    <div>
+                                        <div class="title">
+                                            <p>스포츠 재활</p>
+                                            <a href="/new/sub/05/03.html">
+                                                <div class="circleBtn">
+                                                    <div class="icon">
+                                                        <svg
+                                                            viewBox="0 0 180 180"
+                                                            version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <circle
+                                                                cx="90"
+                                                                cy="90"
+                                                                r="80"
+                                                                stroke="rgba(255 255 255 / 50%)"
+                                                                fill="none"
+                                                                class="outline"
+                                                            ></circle>
+                                                        </svg>
+                                                        <svg
+                                                            viewBox="0 0 180 180"
+                                                            version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <circle
+                                                                cx="90"
+                                                                cy="90"
+                                                                r="80"
+                                                                stroke="rgba(214 118 8 / 0%)"
+                                                                fill="none"
+                                                                class="outline outline2"
+                                                            ></circle>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <p>스포츠 재활 치료를 통해 빠른 운동 복귀를 도와드립니다.</p>
+                                    </div>
+                                </h3>
+                                <div class="infoWrap">
+                                    <h4 class="subtitle">스마트의 스포츠 재활 POINT</h4>
+                                    <dl class="">
+                                        <div class="item">
+                                            <dt>POINT 01</dt>
+                                            <dd>정확한 진단을 통해 체계적인 재활치료를 진행합니다.</dd>
+                                        </div>
+                                        <div class="item">
+                                            <dt>POINT 02</dt>
+                                            <dd>재발 방지를 위한 바른자세 및 운동법을 교육합니다.</dd>
+                                        </div>
+                                        <div class="item">
+                                            <dt>POINT 03</dt>
+                                            <dd>빠른 기능 회복으로 스포츠 활동으로의 빠른 복귀를 돕습니다.</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="index-flow__item item04" data-change-trigger>
+                                <h3 class="titleWrap">
+                                    <div class="number">
+                                        <img src="http://www.smart-pain.com/new/images/main/Msection72_num04.png" />
+                                    </div>
+                                    <div>
+                                        <div class="title">
+                                            <p>수술 후 재활</p>
+                                            <a href="/new/sub/05/04.html">
+                                                <div class="circleBtn">
+                                                    <div class="icon">
+                                                        <svg
+                                                            viewBox="0 0 180 180"
+                                                            version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <circle
+                                                                cx="90"
+                                                                cy="90"
+                                                                r="80"
+                                                                stroke="rgba(255 255 255 / 50%)"
+                                                                fill="none"
+                                                                class="outline"
+                                                            ></circle>
+                                                        </svg>
+                                                        <svg
+                                                            viewBox="0 0 180 180"
+                                                            version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <circle
+                                                                cx="90"
+                                                                cy="90"
+                                                                r="80"
+                                                                stroke="rgba(214 118 8 / 0%)"
+                                                                fill="none"
+                                                                class="outline outline2"
+                                                            ></circle>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <p>재발 위험을 방지하고 환자의 빠른 일상 복귀를 돕습니다.</p>
+                                    </div>
+                                </h3>
+                                <div class="infoWrap">
+                                    <h4 class="subtitle">스마트의 수술 후 재활 POINT</h4>
+                                    <dl class="">
+                                        <div class="item">
+                                            <dt>POINT 01</dt>
+                                            <dd>충분한 상담을 통해 맞춤형 치료 계획을 수립합니다.</dd>
+                                        </div>
+                                        <div class="item">
+                                            <dt>POINT 02</dt>
+                                            <dd>환자의 건강 상태를 정확하게 진단하여 치료를 진행합니다.</dd>
+                                        </div>
+                                        <div class="item">
+                                            <dt>POINT 03</dt>
+                                            <dd>빠른일상으로 복귀한 뒤에도 알맞은 운동법과 관리를 교육합니다.</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Msection7--text">
+                <div class="sub_top" data-aos="fade-up">
+                    <h1>meet smart<span class="orange_color">.</span></h1>
+                    <p>꼼꼼함이 남다른 스마트를 미리 만나보세요.</p>
+                </div>
+            </section>
+            <section class="Msection7">
+                <div class="video_wrap">
+                    <div class="Video_expand">
+                        <!--
+			<video autoplay="" loop="" muted="" playsinline="" preload="metadata" src="https://player.vimeo.com/progressive_redirect/download/878587029/container/00fae18c-8ef6-4e5e-b8b1-ea3cbf4fd3c5/84b10cbd/%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3_%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC1%20%281080p%29.mp4?expires=1698806044&amp;loc=external&amp;signature=4ce34bce8a08c8d0a720761efac9faca47768fc7d90644bbdc5f759d5c0cd2fb">
+			<source data-src="https://player.vimeo.com/progressive_redirect/download/878587029/container/00fae18c-8ef6-4e5e-b8b1-ea3cbf4fd3c5/84b10cbd/%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3_%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC1%20%281080p%29.mp4?expires=1698806044&amp;loc=external&amp;signature=4ce34bce8a08c8d0a720761efac9faca47768fc7d90644bbdc5f759d5c0cd2fb">
+			</video>
+		-->
+                        <video
+                            autoplay=""
+                            loop=""
+                            muted=""
+                            playsinline=""
+                            preload="metadata"
+                            src="http://www.smart-pain.com/new/images/video/smart_video.mp4"
+                        >
+                            <source data-src="http://www.smart-pain.com/new/images/video/smart_video.mp4" />
+                        </video>
+                    </div>
+                </div>
+            </section>
+            <div id="cursor"></div>
+            <!-- 01.11 메인팝업 가이드 -->
+            <div class="layerPop-overlay"></div>
+            <!--
+<div class="layerPop-wrap">
+	<div class="layerPopTop">
+		<input type="checkbox" id="todayNoPopchk"><label for="todayNoPopchk" class="label">오늘 하루 전체 닫기</label>
+		<button><img src="http://www.smart-pain.com/new/images/common/all_menu_close.png"></button>
+	</div>
+	<div class="layerPopCont">
+		<div class="layerPop">
+      <a href="#"><img src="http://www.smart-pain.comhttp://www.smart-pain.com//new/upload/popup/popup_659fdbec5af7a.jpg"></a>
+      <div class="popup-bt"><a href="#">1일 동안 보지 않음</a> <a href="#">닫기</a></div>
+    </div>
+		<div class="layerPop">
+      <a href="#"><img src="http://www.smart-pain.comhttp://www.smart-pain.com//new/upload/popup/popup_659fdbec5af7a.jpg"></a>
+      <div class="popup-bt"><a href="#">1일 동안 보지 않음</a> <a href="#">닫기</a></div>
+    </div>
+		<div class="layerPop">
+      <a href="#"><img src="http://www.smart-pain.comhttp://www.smart-pain.com//new/upload/popup/popup_659fdbec5af7a.jpg"></a>
+      <div class="popup-bt"><a href="#">1일 동안 보지 않음</a> <a href="#">닫기</a></div>
+    </div>
+		<div class="layerPop">
+      <a href="#"><img src="http://www.smart-pain.comhttp://www.smart-pain.com//new/upload/popup/popup_659fdbec5af7a.jpg"></a>
+      <div class="popup-bt"><a href="#">1일 동안 보지 않음</a> <a href="#">닫기</a></div>
+    </div>
+  </div>
+</div>
+-->
+            <!-- //01.11 메인팝업 가이드 -->
+
+            <script src="http://www.smart-pain.com/new/lib/js/main/main.js?v=20240221092849"></script>
+            <script defer>
+                $(function () {
+                    mainFunc = new $.funcMain()
+                    mainFunc.init()
+                })
+            </script>
+        </div>
+        <!--wrap-->
+        <footer data-aos="fade-up">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="flex_box flex-between">
+                        <div class="left">
+                            <h1 class="tit">smart<br />pain clinic<span class="orange_color">.</span></h1>
+                            <ul class="snsList">
+                                <!-- <li class="blog"><a href="#" target="_blank">blog</a></li> -->
+                                <li class="youtube">
+                                    <a href="https://www.youtube.com/@user-ku9us4bk9m" target="_blank">youtube</a>
+                                </li>
+                                <li class="instar">
+                                    <a href="https://www.instagram.com/smart_pain/" target="_blank">instar</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <h1 class="customService">Customer Service</h1>
+                            <div class="flex_box flex-between">
+                                <div class="service">
+                                    <h2>평촌점</h2>
+                                    <p>031.425.7755</p>
+                                    <ul>
+                                        <li><span>월·목</span>am09:00-pm07:30</li>
+                                        <li><span>화·금</span>am09:00-pm06:30</li>
+                                        <li><span>수요일</span>pm02:00-pm07:00</li>
+                                        <li><span>토요일</span>am09:30-pm01:00</li>
+                                        <li><span>점심시간</span>pm01:00-pm02:00</li>
+                                        <li><span>일요일</span>휴진</li>
+                                    </ul>
+                                </div>
+                                <div class="service">
+                                    <h2>안양점</h2>
+                                    <p>031.466.7555</p>
+                                    <ul>
+                                        <li><span>평일</span>am09:00-pm08:00</li>
+                                        <li><span>토요일</span>am09:00-pm03:00</li>
+                                        <li><span>일요일</span>am09:00-pm01:00</li>
+                                        <li><span>점심시간</span>pm01:00-pm02:00</li>
+
+                                        <li><span>공휴일</span>휴진</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="flex_box flex-between">
+                        <div class="address flex_box">
+                            <dl>
+                                <dt>평촌점</dt>
+                                <dd>
+                                    상호명: 닥터황스마트마취통증의학과의원 | 대표:황인성<br />
+                                    사업자번호:378-32-01280 | 주소: 경기 안양시 동안구 시민대로 311(금강스마트빌딩
+                                    307호)
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>안양점</dt>
+                                <dd>
+                                    상호명: 스마트마취통증의학과의원 안양점 | 대표:김태준<br />
+                                    사업자번호:257-99-01555 | 주소: 경기도 안양시 만안구 안양로 307 금상타워 6층
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="links">
+                            <a href="/new/sub/06/07.html">개인정보처리방침</a>
+                            <a href="/new/sub/06/08.html">서비스이용약관</a>
+                            <a href="/new/sub/06/05.html">비급여비용안내</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="flex_box flex-between align-center">
+                        <p>COPYRIGHT (C) 2023 스마트마취통증의학과의원. ALL RIGHT RESERVED</p>
+                        <p>ALL DESIGNED BY. 오월의나무컴퍼니</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            $(window).resize(function () {
+                var docWidth = $(window).width()
+
+                if (docWidth < 1000) {
+                    var href = $(location).attr('href')
+                    var pathname = $(location).attr('pathname')
+                    //document.location.href = href.replace(__basePath + pathname , __basePath + "/m" + pathname);
+
+                    document.location.href =
+                        __basePath + '/mo' + href.substring(href.lastIndexOf(pathname) + __basePath.length, href.length)
+                }
+            })
+        </script>
+    </body>
+</html>
