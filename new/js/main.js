@@ -254,7 +254,7 @@ $(function () {
       scrollTrigger: {
         trigger: '.transition_section .flex-box',
         start: 'top top',
-        end: () => `+=${document.querySelector('.panel').offsetHeight} -120%`,
+        end: () => `+=${document.querySelector('.panel').offsetHeight} -30%`,
         pin: '.Msectionnew2',
         pinSpacing: false,
         ease: "none",
@@ -279,7 +279,7 @@ $(function () {
     imgHeight = 700;
     imgWidth = 600;
   } else {
-    imgHeight = windowHeight - 140;
+    imgHeight = windowHeight - 110;
     imgWidth = imgHeight + 370;
   }
 
