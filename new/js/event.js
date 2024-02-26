@@ -10,7 +10,6 @@ document.addEventListener('click', function(event) {
         const videoClick = panel.querySelector('.aos-a-c');
         const hoverEffClose = panel.querySelector('.hover--eff');
         const aosLbT = panel.querySelector('.aos-lb_t');
-        const textC = panel.querySelector('.text-c');
 
         quickBtnC.style.display = 'none';
         
@@ -21,7 +20,6 @@ document.addEventListener('click', function(event) {
             hoverVideo.classList.remove('hover_video-open');
             hoverEffClose.classList.remove('panel_close');
             aosLbT.classList.remove('aos-lb_t-c');
-            textC.classList.remove('text-c2');
             quickBtnC.classList.remove('quickBtn-c-1');
             quickBtnC2.classList.add('quickBtnC2-1')
 
@@ -34,7 +32,6 @@ document.addEventListener('click', function(event) {
             const videoClick = panel.querySelector('.aos-a-c');
             const hoverEffClose = panel.querySelector('.hover--eff');
             const aosLbT = panel.querySelector('.aos-lb_t');
-            const textC = panel.querySelector('.text-c');
 
             aosNone.style.display = 'none';
             hoverVideo.style.display = 'block';
@@ -42,7 +39,6 @@ document.addEventListener('click', function(event) {
             hoverVideo.classList.add('hover_video-open');
             hoverEffClose.classList.add('panel_close');
             aosLbT.classList.add('aos-lb_t-c');
-            textC.classList.add('text-c2');
             quickBtnC.classList.add('quickBtn-c-1');
             quickBtnC2.classList.remove('quickBtnC2-1')
             quickBtnC.style.display = 'block';

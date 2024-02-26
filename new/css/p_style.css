@@ -3,6 +3,7 @@
 @import url('base.css');
 @import url('animate.css');
 @import url('p_common.css');
-@import url('p_main.css');
+/* @import url('p_main.css'); */
 @import url('p_sub.css');
 @import url('p_board.css');
+@import url('common.css');

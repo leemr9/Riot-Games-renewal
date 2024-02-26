@@ -262,7 +262,7 @@ $(function () {
       },
     })
     .to(sections, {
-      xPercent: -60 * (sections.length - 1)
+      xPercent: -60 * (sections.length + 5)
     })
     .from('.panelsText', {
       autoAlpha: 1
@@ -481,4 +481,8 @@ $(document).ready(function () {
     $(".header").removeClass("scrollDown");
     $(".header").addClass("scrollUp");
   });
+  $('.m2-panel-desc').on('click', function () {
+    $('.m2-panel').removeClass('active')
+    $(this).parent().addClass('active')
+})
 });

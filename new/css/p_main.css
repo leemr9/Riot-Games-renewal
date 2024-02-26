@@ -353,10 +353,6 @@
 .Msectionnew2 .hover--eff .hover_video {
     display: none;
 }
-.Msectionnew2 .hover--eff .hover_video-open {
-    border-radius: 0 0 20px 20px;
-    background-color: #000;
-}
 .Msectionnew2 .flex-box {
     display: flex;
     padding: 0 3.2rem;
@@ -422,12 +418,11 @@
 .Msectionnew2 .flex-box .panel {
     flex: 0 0 auto;
     width: 600px;
-    /* background: #f4f1ed; */
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.Msectionnew2 .flex-box .panel_close {
+.Msectionnew2 .flex-box .m2-panel:active {
     gap: 0;
 }
 /*
@@ -1337,13 +1332,6 @@
 .Msectionnew2 .flex-box .panel .quickBtn .text-c {
     width: 60px;
     height: 60px;
-}
-.Msectionnew2 .flex-box .panel .quickBtn .text-c2 {
-    width: 40px;
-    height: 40px;
-}
-.Msectionnew2 .flex-box .panel_close {
-    gap: 0;
 }
 .quickCont {
     display: none;
