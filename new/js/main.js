@@ -254,15 +254,15 @@ $(function () {
       scrollTrigger: {
         trigger: '.transition_section .flex-box',
         start: 'top top',
-        end: () => `+=${document.querySelector('.panel').offsetHeight} -30%`,
+        end: () => `+=${document.querySelector('.panel').offsetHeight * 2} -30%`,
         pin: '.Msectionnew2',
-        pinSpacing: false,
+        pinSpacing: true,
         ease: "none",
         scrub: 2,
       },
     })
     .to(sections, {
-      xPercent: -100 * (sections.length - 2)
+      xPercent: -60 * (sections.length - 1)
     })
     .from('.panelsText', {
       autoAlpha: 1
@@ -270,7 +270,6 @@ $(function () {
     .from('.panelsText ', {
       yPercent: -50
     })
-
   var windowHeight = $(window).height() - 280;
   var imgHeight = 0;
   var imgWidth = 0;
