@@ -540,12 +540,12 @@
 .Msection3.fixed .flex_box {margin-top:0;}
 .Msection3.fixed .text_wrap {padding-bottom:0;}
 */
-.Msection3 .msection3--line1 .item_img {
+.Msection3 .line_wrap .item_img {
     width: 75px;
     height: 75px;
     opacity: 0;
 }
-.Msection3 .msection3--line1.aos-animate .item_img {
+.Msection3 .line_wrap.aos-animate .item_img {
     animation: oneImgAni 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s forwards;
 }
 

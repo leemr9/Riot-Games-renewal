@@ -12,11 +12,11 @@ $(function() {
 			$('.layerPop-overlay').hide();
 			$('.layerPop-wrap').remove();
 
-			if ($.cookie("c_nopopup_pc") != "N") {
-				setTimeout(function() {
-					_this.getPopupList();
-				}, 1000*3);
-			}
+			// if ($.cookie("c_nopopup_pc") != "N") {
+			// 	setTimeout(function() {
+			// 		_this.getPopupList();
+			// 	}, 1000*3);
+			// }
 		}
 
 		this.getPopupList = function() {

@@ -104,118 +104,113 @@ $(function () {
   $("body").css("overflow", "hidden");
   $(".main_home .main_bg_slider").css("opacity", "0");
   $(".main_home .text_slider_wrap").css("opacity", "0");
-  $(".header-wrap .logo").css("width", "100%");
-  $(".header-wrap .logo").css("height", "100vh");
+  // $(".header-wrap .logo").css("width", "100%");
+  // $(".header-wrap .logo").css("height", "100vh");
 
 
-  gsap.fromTo(
-    $('.header-wrap .logo'), {
-      yPercent: 0,
-      opacity: 0,
-    }, {
-      yPercent: 0,
-      opacity: 1,
-      duration: 1,
-      ease: "power4.inOut",
-
-
-      onComplete: function () {
-        gsap.fromTo(
-          $('.header-wrap .logo'), {
-            width: '100%',
-            height: '100vh',
-            left: 0,
-            top: 0,
-          }, {
-            width: '51px',
-            height: '51px',
-            delay: 0.5,
-            duration: 0.9,
-            left: 53,
-            top: 26,
-          }
-        );
-        gsap.to(window, 0, {
-          scrollTo: 0
-        });
-        gsap.fromTo(
-          $('.header #gnb'), {
-            yPercent: 25,
-            opacity: 0,
-
-          }, {
-            yPercent: 0,
-            opacity: 1,
-            delay: 0.8,
-            duration: 1,
-          }
-        );
-
-        gsap.fromTo(
-          $('.header .sub_menuBtn'), {
-            yPercent: 25,
-            opacity: 0,
-
-          }, {
-            yPercent: 0,
-            opacity: 1,
-            delay: 0.8,
-            duration: 1,
-          }
-        );
-
-        gsap.fromTo(
-          $('.main_home .main_bg_slider'), {
-            yPercent: 100,
-            opacity: 0,
-
-          }, {
-            yPercent: 0,
-            opacity: 1,
-            delay: 0.5,
-            duration: 0.9,
-          }
-        );
-
-        gsap.fromTo(
-          $('.main_home .text_slider_wrap'), {
-            opacity: 0,
-            yPercent: 100,
-
-          }, {
-            opacity: 1,
-            yPercent: 0,
-            delay: 0.5,
-            duration: 0.9,
-          }
-        );
-
-
-        gsap.fromTo(
-          $('body'), {
-            overflow: 'hidden',
-
-          }, {
-            overflow: 'visible',
-            delay: 0.8,
-            duration: 1,
-          }
-        );
-      }
-    }
-  );
-
-  gsap.to('.orange_bg', {
+gsap.fromTo(
+  $('.header-wrap .logo'),
+  {
+    yPercent: 25,
+    opacity: 0,
+  },
+  {
+    yPercent: 25,
+    opacity: 1,
     duration: 1,
-    autoAlpha: 0,
-    scrollTrigger: {
-      trigger: ".Msection1",
-      start: "top top",
-      scrub: 1,
-      //markers:true,
-      end: "bottom bottom",
+    ease: "power4.inOut",
+    onComplete: function () {
+      gsap.fromTo(
+        $('.header-wrap .logo'), {
+          width: '50%',
+          height: '100vh',
+          top: '90%',
+          left: '30%',
+          right: 0,
+        }, {
+          width: '127px',
+          height: '34px',
+          delay: 0.5,
+          duration: 0.9,
+          top: '24%',
+          left: '1%',
+        }
+      );
+      gsap.to(window, 0, {
+        scrollTo: 0
+      });
+      gsap.fromTo(
+        $('.header #gnb'), {
+          yPercent: 25,
+          opacity: 0,
+
+        }, {
+          yPercent: 0,
+          opacity: 1,
+          delay: 0.8,
+          duration: 1,
+        }
+      );
+      gsap.fromTo(
+        $('.header .sub_menuBtn'), {
+          yPercent: 25,
+          opacity: 0,
+
+        }, {
+          yPercent: 0,
+          opacity: 1,
+          delay: 0.8,
+          duration: 1,
+        }
+      );
+      gsap.fromTo(
+        $('.main_home .main_bg_slider'), {
+          yPercent: 100,
+          opacity: 0,
+        },
+        {
+          yPercent: 0,
+          opacity: 1,
+          delay: 0.5,
+          duration: 0.9,
+        }
+      );
+      gsap.fromTo(
+        $('.main_home .text_slider_wrap'), {
+          opacity: 0,
+          yPercent: 100,
+        },
+        {
+          opacity: 1,
+          yPercent: 0,
+          delay: 0.5,
+          duration: 0.9,
+        }
+      );
+      gsap.fromTo(
+        $('body'), {
+          overflow: 'hidden',
+        },
+        {
+          overflow: 'visible',
+          delay: 0.8,
+          duration: 1,
+        }
+      );
     }
-  });
+  }
+);
+gsap.to('.orange_bg', {
+  duration: 1,
+  autoAlpha: 0,
+  scrollTrigger: {
+    trigger: ".Msection1",
+    start: "top top",
+    scrub: 1,
+    //markers:true,
+    end: "bottom bottom",
+  }
+});
   let tl_1 = gsap.timeline();
   tl_1.to(".Msection1 .main_bg_slider", {
     scale: 0.9
@@ -248,13 +243,17 @@ $(function () {
   }
   let sections = gsap.utils.toArray(".Msectionnew2 .panel");
   gsap.set('.Msectionnew2', {
-    height: '200vh'
+    height: '100vh'
   })
+  function calculateXPercent() {
+    const panelWidth = 6 * (sections.length + 1);
+    return -panelWidth * (sections.length + 4);
+  }
   gsap.timeline({
       scrollTrigger: {
         trigger: '.transition_section .flex-box',
         start: 'top top',
-        end: () => `+=${document.querySelector('.panel').offsetHeight * 2} -30%`,
+        end: () => `+=${document.querySelector('.panel').offsetHeight} -30%`,
         pin: '.Msectionnew2',
         pinSpacing: true,
         ease: "none",
@@ -262,14 +261,11 @@ $(function () {
       },
     })
     .to(sections, {
-      xPercent: -60 * (sections.length + 5)
-    })
-    .from('.panelsText', {
-      autoAlpha: 1
-    }, "<")
-    .from('.panelsText ', {
-      yPercent: -50
-    })
+      xPercent: calculateXPercent()
+  });
+    // .to(sections, {
+    //   xPercent: -40 * (sections.length + 7.5)
+    // });
   var windowHeight = $(window).height() - 280;
   var imgHeight = 0;
   var imgWidth = 0;
@@ -289,9 +285,9 @@ $(function () {
   ScrollTrigger.create({
     trigger: ".Msection3",
     start: "top 0px",
-    end: "bottom 30%",
+    end: "bottom 50%",
     pin: true,
-    //markers: true,
+    // markers: true,
     scrub: 1,
   });
 
@@ -481,8 +477,9 @@ $(document).ready(function () {
     $(".header").removeClass("scrollDown");
     $(".header").addClass("scrollUp");
   });
+
   $('.m2-panel-desc').on('click', function () {
     $('.m2-panel').removeClass('active')
     $(this).parent().addClass('active')
+  })
 })
-});
