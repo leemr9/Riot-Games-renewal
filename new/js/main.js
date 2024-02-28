@@ -124,8 +124,8 @@ gsap.fromTo(
         $('.header-wrap .logo'), {
           width: '50%',
           height: '100vh',
-          top: '90%',
-          left: '30%',
+          top: '85%',
+          left: '26%',
           right: 0,
         }, {
           width: '127px',
@@ -367,7 +367,7 @@ gsap.to('.orange_bg', {
   }, {
     xPercent: 20,
     stagger: .2,
-    duration: 5,
+    duration: 7,
     ease: "power2.out"
   });
 
