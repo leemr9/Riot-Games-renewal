@@ -477,9 +477,14 @@ $(document).ready(function () {
     $(".header").removeClass("scrollDown");
     $(".header").addClass("scrollUp");
   });
-
   $('.m2-panel-desc').on('click', function () {
-    $('.m2-panel').removeClass('active')
-    $(this).parent().addClass('active')
-  })
+    var $parentPanel = $(this).parent('.m2-panel');
+    var parentActive = $parentPanel.hasClass('active');
+    
+    $('.m2-panel').removeClass('active');
+    
+    if (!parentActive) {
+        $parentPanel.addClass('active');
+    }
+});
 })

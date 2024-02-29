@@ -398,7 +398,7 @@
           color: #615954;
           font-size: 16px;
           position: relative;
-          transition: all 0.3s ease 0s;
+          // transition: all 0.3s ease 0s;
           height: 40px;
           line-height: 40px;
           font-weight: 400;
@@ -424,7 +424,7 @@
           position: absolute;
           left: 50%;
           top: -2rem;
-          transition: all ease 0.5s;
+          // transition: all ease 0.3s;
           transform: translateX(-50%);
           width: 6px;
           height: 6px;
@@ -448,10 +448,17 @@
   /* 서브메뉴 */
   
   footer {
-    background: #fcfcfc;
+    background: #252423;
   
     .flex_box {
       display: flex;
+
+      a:hover {
+
+        path {
+          fill: #d1363a;
+        }
+      }
     }
   
     .flex-between {
@@ -459,7 +466,7 @@
     }
   
     .align-center {
-      aling-items: center;
+      align-items: center;
     }
   
     .footer_top {
@@ -471,7 +478,7 @@
         text-transform: uppercase;
       }
   
-      .snsList {
+      .footer__social {
         display: flex;
         margin-top: 20px;
   
@@ -491,17 +498,40 @@
             overflow: hidden;
           }
   
-          &.blog a {
-            background: url('http://www.smart-pain.com/new/images/common/footer_sns1.png') no-repeat center;
-          }
+          // &.blog a {
+          //   background: url('http://www.smart-pain.com/new/images/common/footer_sns1.png') no-repeat center;
+          // }
   
-          &.youtube a {
-            background: url('http://www.smart-pain.com/new/images/common/footer_sns2.png') no-repeat center;
-          }
+          // &.youtube a {
+          //   background: url('http://www.smart-pain.com/new/images/common/footer_sns2.png') no-repeat center;
+          // }
   
-          &.instar a {
-            background: url('http://www.smart-pain.com/new/images/common/footer_sns3.png') no-repeat center;
-          }
+          // &.instar a {
+          //   background: url('http://www.smart-pain.com/new/images/common/footer_sns3.png') no-repeat center;
+          // }
+        }
+
+        .is-vhidden {
+          position: absolute;
+          clip: rect(0, 0, 0, 0);
+          overflow: hidden;
+          height: 1px;
+          width: 1px;
+          padding: 0;
+          margin: -1px;
+          border: 0;
+        }
+
+        .icon {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-pack: center;
+          justify-content: center;
         }
       }
   
@@ -565,11 +595,27 @@
       padding: 50px 0;
       border-top: 1px solid #dedede;
   
-      .links a {
-        color: #868686;
+      .links {
+        display: flex;
+        align-items: center;
+
+        li {
+          padding: 0 30px;
+        }
+
+        a {
+
+          strong {
+            color: #d1363a;
+          }
+        }
+      }
+
+      .links li > a {
+        color: #fff;
         letter-spacing: -0.06em;
-        font-size: 14px;
-        font-weight: 350;
+        font-size: 16px;
+        font-weight: 500;
         margin-right: 20px;
         position: relative;
   
@@ -592,28 +638,35 @@
             display: none;
           }
         }
-      }
-  
-      .address {
-        dl + dl {
-          margin-left: 40px;
-        }
-  
-        dt {
-          color: #787878;
-          font-size: 16px;
-          letter-spacing: -0.06em;
-          font-weight: 500;
-        }
-  
-        dd {
-          color: #868686;
-          font-size: 15px;
-          letter-spacing: -0.09em;
-          font-weight: 350;
-          line-height: 25px;
+        &:hover {
+          border-bottom: 1px solid #fff;
+
+          strong {
+            border-bottom: 1px solid #d1363a;
+          }
         }
       }
+  
+      // .address {
+      //   li + li {
+      //     margin-left: 40px;
+      //   }
+  
+      //   dt {
+      //     color: #787878;
+      //     font-size: 16px;
+      //     letter-spacing: -0.06em;
+      //     font-weight: 500;
+      //   }
+  
+      //   dd {
+      //     color: #868686;
+      //     font-size: 15px;
+      //     letter-spacing: -0.09em;
+      //     font-weight: 350;
+      //     line-height: 25px;
+      //   }
+      // }
     }
   
     .copyright {
