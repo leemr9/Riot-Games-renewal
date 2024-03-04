@@ -453,6 +453,10 @@
     .flex_box {
       display: flex;
 
+      svg {
+        transition: all 0.3s;
+      }
+
       a:hover {
 
         path {
@@ -464,9 +468,9 @@
     .flex-between {
       justify-content: space-between;
     }
-  
-    .align-center {
-      align-items: center;
+
+    .flex-between2 {
+      align-items: flex-end;
     }
   
     .footer_top {
@@ -541,33 +545,36 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 21px;
-        padding-bottom: 30px;
+        // padding-bottom: 30px;
         text-transform: uppercase;
       }
   
       .service {
-        + .service {
-          margin-left: 50px;
-        }
+        // + .service {
+        //   margin-left: 50px;
+        // }
   
-        h2 {
-          font-size: 18px;
-          font-weight: 500;
-          padding-bottom: 10px;
-        }
+        // h2 {
+        //   font-size: 18px;
+        //   font-weight: 500;
+        //   padding-bottom: 10px;
+        // }
   
-        p {
-          font-family: 'Montserrat', sans-serif;
-          font-weight: 700;
-          color: #e07800;
-          font-size: 23px;
-        }
+        // p {
+        //   font-family: 'Montserrat', sans-serif;
+        //   font-weight: 700;
+        //   color: #e07800;
+        //   font-size: 23px;
+        // }
   
         ul {
+          display: flex;
           padding-top: 25px;
           margin-top: 25px;
           border-top: 1px solid #e5e5e5;
-          padding-right: 10px;
+          justify-content: space-between;
+          align-items: center;
+          gap: 30px;
         }
   
         li {
@@ -576,17 +583,17 @@
           color: #969696;
           font-weight: 350;
   
-          span {
-            color: #656565;
-            display: inline-block;
-            width: 110px;
-            font-weight: 400;
+          // span {
+          //   color: #656565;
+          //   display: inline-block;
+          //   width: 110px;
+          //   font-weight: 400;
   
-            .txt {
-              color: #989898;
-              display: inline;
-            }
-          }
+          //   .txt {
+          //     color: #989898;
+          //     display: inline;
+          //   }
+          // }
         }
       }
     }

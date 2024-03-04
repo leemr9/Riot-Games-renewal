@@ -478,7 +478,7 @@
     color: #fff;
     font-size: 18px;
 }
-.Msectionnew2 .smartnetwork a {
+/* .Msectionnew2 .smartnetwork a {
     background: url('http://www.smart-pain.com/new/images/main/Msection2_img04_btn.png');
     width: 209px;
     height: 209px;
@@ -488,7 +488,7 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-}
+} */
 .Msectionnew2 .smartnetwork a img {
     width: auto;
     border-radius: 0;
