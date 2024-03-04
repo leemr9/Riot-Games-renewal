@@ -124,7 +124,7 @@ gsap.fromTo(
         $('.header-wrap .logo'), {
           width: '50%',
           height: '100vh',
-          top: '85%',
+          top: '110%',
           left: '26%',
           right: 0,
         }, {
