@@ -1462,16 +1462,27 @@ a.btn-yellow {
   height: auto;
   border-radius: 8px;
   display: block;
-  border: 1px solid #1F1F1F;
+  position: relative;
 }
 .Msection3 .m3-img_container a img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  border: 1px solid #1F1F1F;
 }
-.Msection3 .m3-img_container a:hover {
+.Msection3 .m3-img_container a img:hover {
   border: 1px solid #fafafa;
   box-sizing: border-box;
+}
+.Msection3 .m3-img_container a .m3-logo {
+  position: absolute;
+  top: 29%;
+  left: 7%;
+  max-width: 180px;
+  border: none;
+}
+.Msection3 .m3-img_container a .m3-logo:hover {
+  border: none;
 }
 
 .Msection4 {

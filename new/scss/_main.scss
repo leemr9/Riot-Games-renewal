@@ -732,16 +732,28 @@
         height: auto;
         border-radius: 8px;
         display: block;
-        border: 1px solid #1F1F1F;
+        position: relative;
         
         img {
           width: 100%;
           height: auto;
           border-radius: 8px;
+          border: 1px solid #1F1F1F;
+          &:hover {
+            border: 1px solid #fafafa;
+            box-sizing: border-box;
+          }
         }
-        &:hover {
-          border: 1px solid #fafafa;
-          box-sizing: border-box;
+
+        .m3-logo {
+          position: absolute;
+          top: 29%;
+          left: 7%;
+          max-width: 180px;
+          border: none;
+          &:hover {
+            border: none;
+          }
         }
       }
     }
